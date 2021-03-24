@@ -116,6 +116,10 @@ if __name__ == "__main__":
 	if user_id == "":
 		print(user_id + "가 비어있습니다.")
 		sys.exit(1)
+  
+
+	cookie = get_cookie()
+	source_header["cookie"] = cookie
 
 	code_path = personal_data["code_path"]
 	code_list_path = personal_data["code_list_path"]
